@@ -15,7 +15,13 @@ echo "please enter the file name you want to merge with the header file"
 read fileName
 headerFile="header.txt"
 newFileName="new_$fileName"
-cat $headerFile $fileName > $newFileName
-echo "The new file name is $newFileName"
-sed -i "" "s/$initDate/$updatedDate/g" $newFileName
-sed -i "" "s/$initAuthor/$updatedAuthor/g" $newFileName
+if [[ -f $fileName ]]; then
+    if [[ -f $headerFile ]]; then
+        cat $headerFile $fileName > $newFileName
+        echo "The new file name is $newFileName"
+        sed -i "" "s/$initDate/$updatedDate/g" $newFileName
+        sed -i "" "s/$initAuthor/$updatedAuthor/g" $newFileName
+    fi
+else
+    echo "one or multiple files not found!"
+fi
