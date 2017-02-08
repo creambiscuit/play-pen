@@ -134,3 +134,6 @@ bower_components
 
 # sftp configuration file
 sftp-config.json
+
+.DS_Store
+
