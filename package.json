@@ -1,0 +1,24 @@
+{
+  "name": "play-pen",
+  "description": "playground for ones who read good",
+  "version": "0.0.0",
+  "bugs": {
+    "url": "https://github.com/creambiscuit/play-pen/issues"
+  },
+  "homepage": "https://github.com/creambiscuit/play-pen#readme",
+  "license": "WTFPL",
+  "main": [
+    "index.js"
+  ],
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creambiscuit/play-pen.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "bootstrap": "~4.0.0-alpha.6"
+  }
+}
