@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>a slice of pi</title>
-    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="pi.js"></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 
-<body ng-app="piApp" ng-controller="piController">
-    <input type="number" ng-model="userValue">
-    {{showPi()}}
+<body>
+    <div class="col-md-8 col-md-offset-2">
+        <h4></h4>
+        <input type="number" id="userValue">
+        <p id="showText"></p>
+    </div>
 </body>
+<script src="pi.js"></script>
 </html>
