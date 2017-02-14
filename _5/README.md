@@ -1,4 +1,4 @@
-# i put my thing down flip it an reverse it
+# i put my thing down flip it and reverse it
 * create a page where the is asked to put in anything into a text field
 * have a button when pressed, displays the user input value in reverse order
 
