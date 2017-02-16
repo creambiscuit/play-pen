@@ -49,7 +49,6 @@ function calculatePrime(num) {
     else
     {
         for (var i = 2; i <= Math.ceil(num/2); i++) {
-            console.log(i);
             if (num%i==0)
             {
                 isPrime = false;
@@ -58,3 +57,5 @@ function calculatePrime(num) {
     }
     return isPrime;
 }
+
+
