@@ -41,21 +41,23 @@ function clearPrime() {
 }
 
 function calculatePrime(num) {
-    var isPrime = true;
     if (num==2)
     {
-        isPrime = false;
+        return false;
+    }
+    else if (num%2==0) {
+        return false;
     }
     else
     {
-        for (var i = 2; i <= Math.ceil(num/2); i++) {
+        for (var i = 2; i <= Math.floor(Math.sqrt(num)); i++) {
             if (num%i==0)
             {
-                isPrime = false;
+                return false;
             }
         }
     }
-    return isPrime;
+    return true;
 }
 
 
