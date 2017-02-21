@@ -50,7 +50,7 @@ function calculatePrime(num) {
     }
     else
     {
-        for (var i = 2; i <= Math.floor(Math.sqrt(num)); i++) {
+        for (var i = 3; i <= Math.floor(Math.sqrt(num)); i++) {
             if (num%i==0)
             {
                 return false;
