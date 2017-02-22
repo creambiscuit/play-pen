@@ -1,0 +1,5 @@
+.arrayBox {
+    height: 400px;
+    width: auto;
+    overflow-y: auto;
+}
