@@ -1,24 +1,23 @@
 var numArray = [];
 var formatArray;
 document.querySelector('.show').addEventListener('click', function () {
-    showMultiples();
+    clearDisplay();
+    calculateMultiples();
     convertArray();
     showArray();
 });
 
-function showMultiples()
+function calculateMultiples()
 {
     for (var i=1; i<=1000; i++)
     {
         if(i%5==0 && i%7!=0)
         {
             numArray.push(i+' - Ziggy Stardust');
-            console.log(numArray[i-1]);
         }
         else if(i%7==0 && i%5!=0)
         {
             numArray.push(i+' - David Bowie');
-            console.log(numArray[i-1]);
         }
         else if(i%5==0 && i%7==0)
         {
@@ -27,7 +26,6 @@ function showMultiples()
         else
         {
             numArray.push(i);
-            console.log(numArray[i-1]);
         }
     }
 }
@@ -37,5 +35,10 @@ function convertArray() {
 }
 
 function showArray() {
-        document.querySelector('.showArray').innerHTML = formatArray;
+    document.querySelector('.showArray').innerHTML = formatArray;
+}
+
+function clearDisplay() {
+    numArray = [];
+    document.querySelector('.showArray').innerHTML = '';
 }
