@@ -1,5 +1,10 @@
 .arrayBox {
-    height: 400px;
+    height: 600px;
     width: auto;
+    background-color: lightgray;
+    margin: auto;
     overflow-y: auto;
+}
+.tops {
+    margin-top: 10px;
 }

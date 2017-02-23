@@ -37,5 +37,6 @@ function convertArray() {
 }
 
 function showArray() {
+    document.querySelector('.showArray').className += ' arrayBox tops';
     document.querySelector('.showArray').innerHTML = formatArray;
 }
