@@ -1,10 +1,12 @@
 var numArray = [];
 var formatArray;
 document.querySelector('.show').addEventListener('click', function () {
-    clearDisplay();
-    calculateMultiples();
-    convertArray();
-    showArray();
+    if (numArray.length==0)
+    {
+        calculateMultiples();
+        convertArray();
+        showArray();
+    }
 });
 
 function calculateMultiples()
@@ -36,9 +38,4 @@ function convertArray() {
 
 function showArray() {
     document.querySelector('.showArray').innerHTML = formatArray;
-}
-
-function clearDisplay() {
-    numArray = [];
-    document.querySelector('.showArray').innerHTML = '';
 }
